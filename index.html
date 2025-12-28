@@ -2,18 +2,19 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Milano Green Travel – Promoción Turismo Sostenible</title>
   <style>
     body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background:
-    linear-gradient(rgba(244,246,247,0.85), rgba(232,245,241,0.85)),
-    url('https://storage.googleapis.com/mytour-prod/blog/top-7-curiosities-about-milan_2020-10-wp3823865-1-scaled.jpg')
-    no-repeat center center fixed;
-  background-size: cover;
-}
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background:
+        linear-gradient(rgba(244,246,247,0.85), rgba(232,245,241,0.85)),
+        url('https://storage.googleapis.com/mytour-prod/blog/top-7-curiosities-about-milan_2020-10-wp3823865-1-scaled.jpg')
+        no-repeat center center fixed;
+      background-size: cover;
+    }
 
     header {
       background: #1f6f5c;
@@ -129,6 +130,37 @@
       font-size: 12px;
       color: #777;
       margin: 40px 0 20px;
+    }
+
+    /* ===== RESPONSIVE PARA MÓVIL ===== */
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+        margin: 15px;
+      }
+      .steps {
+        grid-template-columns: 1fr; /* apilar pasos verticalmente */
+      }
+      .step span {
+        font-size: 28px;
+      }
+      .step p {
+        font-size: 14px;
+      }
+      .step a.button {
+        padding: 8px 14px;
+        font-size: 13px;
+      }
+      .cta a.button {
+        padding: 12px 20px;
+        font-size: 15px;
+      }
+      header h1 {
+        font-size: 26px;
+      }
+      header p {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
